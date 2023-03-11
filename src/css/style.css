@@ -59,7 +59,22 @@ header {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+}
+
+.under-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(#fff4e1, #fffdf8);
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #b9b9b9;
 }
 
 .logo,
@@ -135,6 +150,10 @@ section {
   width: 100%!important;
 }
 
+.container-text {
+  display: none;
+}
+
 .container-text,
 .container-title {
   min-width: 300px;
@@ -155,6 +174,11 @@ section {
   text-align: justify;
 }
 
+.map {
+  width: 90%;
+  height: 100%;
+}
+
 .button {
   display: block;
   background: linear-gradient(#ffeece, #ffd68a);;
@@ -163,10 +187,17 @@ section {
   padding-block: 10px;
   text-align: center;
   border-radius: 10px;
+  box-shadow: 0 5px 5px #b9b9b9;
 }
 
 .button:hover {
   background: #c5d8ff;
+}
+
+@media screen and (min-width: 660px) {
+  .container-text {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -195,11 +226,17 @@ section {
   .logo-text {
     display: inline;
   }
-}
 
-@media screen and (min-width: 1400px) {
   section {
-    width: 80%;
-    align-self: center;
+    flex-direction: row;
+    padding-inline: 8%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .under-section {
+    width: 30%;
+    height: 410px;
+    margin-bottom: 0;
   }
 }
