@@ -8,42 +8,67 @@ homeClass: active
 
 {% include 'header.njk' %}
 
-<h1 class="hidden">Crédit Time</h1>
+<main>
+  <h1 class="hidden">Crédit Time</h1>
 
-<div class="container-dark">
-  <img class="container-img" src="/assets/horloge.jpg" alt="Credit Time Horloge" width="100vw" height="auto">
-  <div class="centered">
-    <h2 class="container-title mb-0 mb-sm-4">Votre courtier, expert de l'immobilier</h2>
-    <div class="container-text">
-      <p class="m-0">Nos clients bénéficient d'un accompagnement sur-mesure et de conseils adaptés à chacune des étapes de leur projet</p>
+  <div class="container-dark">
+    <img class="container-img" src="/assets/horloge.jpg" alt="Credit Time Horloge" width="100vw" height="auto">
+    <div class="centered">
+      <h2 class="container-title mb-0 mb-sm-4">Votre courtier, expert de l'immobilier</h2>
+      <div class="container-text">
+        <p class="m-0">Nos clients bénéficient d'un accompagnement sur-mesure et de conseils adaptés à chacune des étapes de leur projet</p>
+      </div>
     </div>
   </div>
-</div>
 
-<section class="mt-5">
-  <div class="under-section">
-    <h3 class="mb-4">Pour nous contacter</h3>
-    <p><b><a class="mb-3" href="tel:0556728206">05 56 72 82 06</a></b></p>
-    <p class="text-justified">Les conseillers <b>Crédit Time</b> sont disponibles et à votre écoute pour vous renseigner et accompagner votre projet.</p>
-    <p class="text-justified">Notre agence est ouverte du lundi au vendredi de 9h00 à 12h et de 13h30 à 18h00. Le samedi matin de 9h00 à 12h. Pour nous rencontrer en dehors de ces plages horaires, veuillez nous contacter.</p>
+  <section class="mt-5">
+    <div class="under-section">
+      <h3 class="mb-4">Pour nous contacter</h3>
+      <p><b><a class="mb-3" href="tel:0556728206">05 56 72 82 06</a></b></p>
+      <p class="text-justified">Les conseillers <b>Crédit Time</b> sont disponibles et à votre écoute pour vous renseigner et accompagner votre projet.</p>
+      <p class="text-justified">Notre agence est ouverte du lundi au vendredi de 9h00 à 12h et de 13h30 à 18h00. Le samedi matin de 9h00 à 12h. Pour nous rencontrer en dehors de ces plages horaires, veuillez nous contacter.</p>
+    </div>
+    <div class="under-section">
+      <h3 class="mb-4">Pour nous écrire</h3>
+      <p><b>Crédit Time</b></p>
+      <p class="m-0">38 Cours Gallieni,</p>
+      <p class="m-0 mb-4">40100 Dax</p>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303.1598743228726!2d-1.0535811072676828!3d43.70724392156739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd56a5fb1b1e16e9%3A0xc9bd0547844dbe9c!2sCr%C3%A9dit%20Time!5e0!3m2!1sfr!2sfr!4v1678545619683!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="under-section">
+      <h3 class="mb-4">Pour définir votre projet</h3>
+      <p class="m-0">Vous avez un projet immobilier en tête ?</p>
+      <p class="m-0 text-justified">Vous souhaitez vous informer sur l'assurance de prêt ?</p>
+      <p class="m-0 text-justified">Vous avez des crédits en cours et souhaiteriez les regrouper ?</p>
+      <p class="m-0 mb-4"><b>Nous avons la solution.</b></p>
+      <a href="#" class="button mb-3">CALCULER CRÉDIT IMMO</a>
+      <a href="#" class="button mb-3">COMPARATIF DES TAUX</a>
+      <a href="#" class="button">CALCUL FRAIS NOTAIRE</a>
+    </div>
+  </section>
+
+  <div class="form-wrapper mt-5 mb-5">
+    <h3 class="mb-4">Contact en ligne</h3>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="text" name="Nom" placeholder="Votre Nom" aria-required="true" required />
+      <input type="text" name="Prenom" placeholder="Votre Prénom" aria-required="true" required />
+      <input type="tel" name="Tel" placeholder="Votre Numéro de Téléphone" aria-required="true" required />
+      <input type="email" name="Mail" placeholder="Votre Adresse Mail" aria-required="false" />
+      <select name="Objet" aria-required="true" placeholder="Objet" required>
+        <option value="Projet">J'ai un projet</option>
+        <option value="Option2">Option n°2</option>
+        <option value="Option3">Option n°3</option>
+        <option value="Option4">Option n°4</option>
+        <option value="Option5">Option n°5</option>
+      </select>
+      <textarea type="text" name="Message" placeholder="Votre Message" rows="6" aria-required="true" required></textarea>
+      <div class="d-flex flex-row align-items-start">
+        <input class="checkbox me-2" type="checkbox" id="user-compliance" name="UserCompliance" />
+        <label for="user-compliance">En soumettant ce formulaire de contact, j'accepte que les informations saisies soient exploitées dans le cadre de ma demande d'information et de la relation commerciale qui peut en découler. Pour connaître et exercer mes droits, notamment pour annuler mon consentement, je consulte les <a href="#">mentions légales</a>.</label>
+      </div>
+      <button class="button mt-3" type="submit">ENVOYER</button>
+    </form>
   </div>
-  <div class="under-section">
-    <h3 class="mb-4">Pour nous écrire</h3>
-    <p><b>Crédit Time</b></p>
-    <p class="m-0">38 Cours Gallieni,</p>
-    <p class="m-0 mb-4">40100 Dax</p>
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303.1598743228726!2d-1.0535811072676828!3d43.70724392156739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd56a5fb1b1e16e9%3A0xc9bd0547844dbe9c!2sCr%C3%A9dit%20Time!5e0!3m2!1sfr!2sfr!4v1678545619683!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-  <div class="under-section">
-    <h3 class="mb-4">Pour définir votre projet</h3>
-    <p class="m-0">Vous avez un projet immobilier en tête ?</p>
-    <p class="m-0 text-justified">Vous souhaitez vous informer sur l'assurance de prêt ?</p>
-    <p class="m-0 text-justified">Vous avez des crédits en cours et souhaiteriez les regrouper ?</p>
-    <p class="m-0 mb-4"><b>Nous avons la solution.</b></p>
-    <a href="#" class="button mb-3">CALCULER CRÉDIT IMMO</a>
-    <a href="#" class="button mb-3">COMPARATIF DES TAUX</a>
-    <a href="#" class="button">CALCUL FRAIS NOTAIRE</a>
-  </div>
-</section>
+</main>
 
 {% include 'footer.njk' %}

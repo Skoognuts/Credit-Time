@@ -65,6 +65,50 @@ section {
   width: 100%;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 530px;
+}
+
+label {
+  text-align: justify;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+input,
+select {
+  height: 30px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+textarea {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.checkbox {
+  height: 20px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .under-section {
   display: flex;
   flex-direction: column;
@@ -181,17 +225,25 @@ section {
 
 .button {
   display: block;
-  background: linear-gradient(#ffeece, #ffd68a);;
+  background: linear-gradient(#ffeece, #ffd68a);
   color: #223459!important;
   width: 250px!important;
-  padding-block: 10px;
+  padding-block: 10px!important;
   text-align: center;
+  border: none!important;
   border-radius: 10px;
   box-shadow: 0 5px 5px #b9b9b9;
 }
 
 .button:hover {
   background: #c5d8ff;
+}
+
+.footer-content {
+  font-size: 0.75rem;
+  padding-block: 5px;
+  background: linear-gradient(#ffeece, #ffd68a);
+  color: #223459;
 }
 
 @media screen and (min-width: 660px) {
