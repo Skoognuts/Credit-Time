@@ -31,6 +31,10 @@ h2 {
   font-size: 1.2rem;
 }
 
+h3 {
+  font-weight: 600;
+}
+
 p {
   font-size: 0.8rem;
 }
@@ -42,6 +46,7 @@ a {
 
 a:hover {
   color: #223459!important;
+  text-shadow: 0 0 5px #223459;
 }
 
 header {
@@ -51,6 +56,10 @@ header {
   align-items: center;
   margin-top: 15px;
   margin-inline: 15px;
+}
+
+section {
+  width: 100%;
 }
 
 .logo,
@@ -111,7 +120,7 @@ header {
   color: #ffffff;
 }
 
-.container {
+.container-dark {
   position: relative;
   width: 100%!important;
   max-width: none!important;
@@ -142,6 +151,24 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.text-justified {
+  text-align: justify;
+}
+
+.button {
+  display: block;
+  background: linear-gradient(#ffeece, #ffd68a);;
+  color: #223459!important;
+  width: 250px!important;
+  padding-block: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background: #c5d8ff;
+}
+
 @media screen and (min-width: 1000px) {
   h2 {
     font-size: 1.8rem;
@@ -167,5 +194,12 @@ header {
 @media screen and (min-width: 1300px) {
   .logo-text {
     display: inline;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  section {
+    width: 80%;
+    align-self: center;
   }
 }
