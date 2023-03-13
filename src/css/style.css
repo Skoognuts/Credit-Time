@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
   font-family: 'Raleway', sans-serif;
   background: #ffffff;
-  color: #000000
+  color: #000000;
 }
 
 main {
@@ -97,6 +97,12 @@ select {
 textarea {
   border: 1px solid #000000;
   border-radius: 5px;
+}
+
+#cookieNotice {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(#ffeece, #ffd68a);
 }
 
 .checkbox {
@@ -235,7 +241,20 @@ textarea {
   box-shadow: 0 5px 5px #b9b9b9;
 }
 
-.button:hover {
+.button-white {
+  display: block;
+  background: #ffffff;
+  color: #223459!important;
+  width: 250px!important;
+  padding-block: 8px!important;
+  text-align: center;
+  border: none!important;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #b9b9b9;
+}
+
+.button:hover,
+.button-white:hover {
   background: #c5d8ff;
 }
 

@@ -11,6 +11,22 @@ homeClass: active
 <main>
   <h1 class="hidden">Crédit Time</h1>
 
+  <div id="cookieNotice" class="light display-right" style="display: none;">
+    <div id="closeIcon" style="display: none;">
+    </div>
+    <div class="title-wrap">
+      <h4 class="mb-3">🍪 Nous avons des cookies 🍪</h4>
+    </div>
+    <div class="content-wrap">
+      <div class="msg-wrap">
+        <p class="text-justified mt-1 mb-1">Ce site utilise des cookies ou des technologies similaires afin de proposer une expérience de navigation optimale ainsi que des recommandations personnalisées. En poursuivant votre navigation, vous acceptez notre <b><a href="/cgu">Politique de Confidentialité</a></b>.</p>
+        <div class="btn-wrap w-100 d-flex flex-row justify-content-center">
+          <button class="button-white" onclick="acceptCookieConsent();">Continuer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container-dark">
     <img class="container-img" src="/assets/horloge.jpg" alt="Credit Time Horloge" width="100vw" height="auto">
     <div class="centered">
@@ -64,11 +80,13 @@ homeClass: active
       <textarea type="text" name="Message" placeholder="Votre Message" rows="6" aria-required="true" required></textarea>
       <div class="d-flex flex-row align-items-start">
         <input class="checkbox me-2" type="checkbox" id="user-compliance" name="UserCompliance" aria-required="true" required />
-        <label for="user-compliance">En soumettant ce formulaire de contact, j'accepte que les informations saisies soient exploitées dans le cadre de ma demande d'information et de la relation commerciale qui peut en découler. Pour connaître et exercer mes droits, notamment pour annuler mon consentement, je consulte les <a href="#">mentions légales</a>.</label>
+        <label for="user-compliance">En soumettant ce formulaire de contact, j'accepte que les informations saisies soient exploitées dans le cadre de ma demande d'information et de la relation commerciale qui peut en découler. Pour connaître et exercer mes droits, notamment pour annuler mon consentement, je consulte les <b><a href="/cgu">Conditions Générales d'Utilisation</a></b>.</label>
       </div>
       <button class="button mt-3" type="submit">ENVOYER</button>
     </form>
   </div>
 </main>
+
+<script src="/js/cookies_consent.js"></script>
 
 {% include 'footer.njk' %}
