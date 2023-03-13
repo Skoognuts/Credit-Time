@@ -59,32 +59,34 @@ homeClass: active
       <p class="m-0 mb-4"><b>Nous avons la solution.</b></p>
       <a href="#" class="button mb-3">CALCULER CRÉDIT IMMO</a>
       <a href="#" class="button mb-3">COMPARATIF DES TAUX</a>
-      <a href="#" class="button">CALCUL FRAIS NOTAIRE</a>
+      <a href="#" class="button mb-3">CALCUL FRAIS NOTAIRE</a>
     </div>
   </section>
 
-  <div class="form-wrapper mt-5 mb-5">
-    <h3 class="mb-4">Contact en ligne</h3>
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="text" name="Nom" placeholder="Votre Nom" aria-required="true" required />
-      <input type="text" name="Prenom" placeholder="Votre Prénom" aria-required="true" required />
-      <input type="tel" name="Tel" placeholder="Votre Numéro de Téléphone" aria-required="true" required />
-      <input type="email" name="Mail" placeholder="Votre Adresse Mail" aria-required="false" />
-      <select name="Objet" aria-required="true" placeholder="Objet" required>
-        <option value="Projet">J'ai un projet</option>
-        <option value="Option2">Option n°2</option>
-        <option value="Option3">Option n°3</option>
-        <option value="Option4">Option n°4</option>
-        <option value="Option5">Option n°5</option>
-      </select>
-      <textarea type="text" name="Message" placeholder="Votre Message" rows="6" aria-required="true" required></textarea>
-      <div class="d-flex flex-row align-items-start">
-        <input class="checkbox me-2" type="checkbox" id="user-compliance" name="UserCompliance" aria-required="true" required />
-        <label for="user-compliance">En soumettant ce formulaire de contact, j'accepte que les informations saisies soient exploitées dans le cadre de ma demande d'information et de la relation commerciale qui peut en découler. Pour connaître et exercer mes droits, notamment pour annuler mon consentement, je consulte les <b><a href="/cgu">Conditions Générales d'Utilisation</a></b>.</label>
-      </div>
-      <button class="button mt-3" type="submit">ENVOYER</button>
-    </form>
-  </div>
+  <section class="large-section">
+    <div class="form-wrapper mb-3">
+      <h3 class="mb-4">Contact en ligne</h3>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="text" name="Nom" placeholder="Votre Nom" aria-required="true" required />
+        <input type="text" name="Prenom" placeholder="Votre Prénom" aria-required="true" required />
+        <input type="tel" name="Tel" placeholder="Votre Numéro de Téléphone" aria-required="true" required />
+        <input type="email" name="Mail" placeholder="Votre Adresse Mail" aria-required="false" />
+        <select name="Objet" aria-required="true" placeholder="Objet" required>
+          <option value="Projet">J'ai un projet</option>
+          <option value="Option2">Option n°2</option>
+          <option value="Option3">Option n°3</option>
+          <option value="Option4">Option n°4</option>
+          <option value="Option5">Option n°5</option>
+        </select>
+        <textarea type="text" name="Message" placeholder="Votre Message" rows="6" aria-required="true" required></textarea>
+        <div class="d-flex flex-row align-items-start">
+          <input class="checkbox me-2" type="checkbox" id="user-compliance" name="UserCompliance" aria-required="true" required />
+          <label for="user-compliance">En soumettant ce formulaire de contact, j'accepte que les informations saisies soient exploitées dans le cadre de ma demande d'information et de la relation commerciale qui peut en découler. Pour connaître et exercer mes droits, notamment pour annuler mon consentement, je consulte les <b><a href="/cgu">Conditions Générales d'Utilisation</a></b>.</label>
+        </div>
+        <button class="button mt-3" type="submit">ENVOYER</button>
+      </form>
+    </div>
+  </section>
 </main>
 
 <script src="/js/cookies_consent.js"></script>

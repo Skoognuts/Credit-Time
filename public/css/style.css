@@ -69,7 +69,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%;
   max-width: 530px;
 }
 
@@ -115,16 +115,21 @@ textarea {
   align-items: center;
 }
 
-.under-section {
+.under-section,
+.large-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
   padding: 10px;
   background: linear-gradient(#fff4e1, #fffdf8);
-  width: 80%;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 5px 5px #b9b9b9;
+}
+
+.large-section {
+  margin-top: 0;
 }
 
 .logo,
@@ -294,6 +299,10 @@ textarea {
 }
 
 @media screen and (min-width: 1300px) {
+  form {
+    width: 80%;
+  }
+
   .logo-text {
     display: inline;
   }
@@ -309,5 +318,10 @@ textarea {
     width: 30%;
     height: 410px;
     margin-bottom: 0;
+  }
+
+  .large-section {
+    margin-top: 48px;
+    width: 84%;
   }
 }
